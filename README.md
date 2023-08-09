@@ -27,4 +27,79 @@ The script provides several commands to manage your WordPress instances:
 Use the following command to create a new WordPress site:
 
 ```bash
-node index.js create <site_name>
+sudo node index.js create <site_name>
+```
+## Enable/Start a Site
+
+To start an existing site, use the following command:
+
+```bash
+node index.js enable
+```
+
+## Disable/Stop a Site
+
+To stop a running site, use the following command:
+
+```bash
+node index.js disable
+```
+
+## Delete a Site
+To delete a site and its associated Docker containers, use the following command:
+
+```bash
+node index.js delete
+```
+
+## Example
+
+Navigate to the script directory in the terminal:
+
+```bash
+cd path/to/script
+```
+
+## Example
+
+1. Navigate to the script directory in the terminal:
+
+```bash
+cd path/to/script
+```
+
+2. Create a new WordPress site:
+
+```bash
+sudo node index.js create example.com
+```
+
+3. Start the site:
+
+```bash
+node index.js enable
+```
+
+4. Stop the site:
+
+```bash
+node index.js disable
+```
+
+5. delete the site:
+
+```bash
+node index.js delete
+```
+
+## Troubleshooting
+
+If Docker or Docker Compose is not installed, the script will automatically attempt to install them. However, you may encounter issues based on your system's configuration.
+
+## Disclaimer
+
+This script is intended for local development and testing purposes. It simplifies the process of setting up and managing WordPress instances using Docker, but it may not cover all production scenarios or best practices.
+
+## Credits
+
+This script was created by Harshil Thummar as a helpful tool for deploying WordPress sites in a local and server development environment.
