@@ -54,39 +54,49 @@ node index.js delete
 
 ## Example
 
-Navigate to the script directory in the terminal:
+1. Clone repository 
+
+```bash
+git clone
+```
+
+2. Navigate to the script directory in the terminal:
 
 ```bash
 cd path/to/script
 ```
 
-## Example
-
-1. Navigate to the script directory in the terminal:
+3. Run script.sh file in the terminal:
 
 ```bash
-cd path/to/script
+sh script.sh
 ```
 
-2. Create a new WordPress site:
+4. Navigate to the example directory in the terminal:
+
+```bash
+cd example/
+```
+
+5. Create a new WordPress site:
 
 ```bash
 sudo node index.js create example.com
 ```
 
-3. Start the site:
+6. Start the site:
 
 ```bash
 node index.js enable
 ```
 
-4. Stop the site:
+7. Stop the site:
 
 ```bash
 node index.js disable
 ```
 
-5. delete the site:
+8. delete the site:
 
 ```bash
 node index.js delete
